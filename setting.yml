@@ -1,0 +1,7 @@
+shitaraba:
+  category: 'カテゴリ'
+  sequence: '番地'
+  thread_stop: 1000
+  noname: '名無しさん'
+token: 'Token is here'
+channel_id: 'Chennel id is here'
