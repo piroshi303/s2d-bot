@@ -11,7 +11,7 @@ Python version 3.5.xがインストールされていること。
 
 ### Pythonパッケージのインストール
 当ファイルを展開したフォルダ内で下記コマンドを実行し、必要なPythonパッケージをインストールしてください。  
-`pip -r requiment.txt`
+`pip -r requirements.txt`
 
 ### setting.xmlの編集
 実行前にsetting.xmlを編集してください。  
