@@ -5,8 +5,8 @@
 [![pyflakes](https://img.shields.io/badge/pyflakes-passing-brightgreen.svg)](https://pypi.python.org/pypi/pyflakes)
 
 ## はじめに
-当プログラムは、[したらば掲示板](https://rentalbbs.shitaraba.com/)に書き込まれた内容を、そのまま[Disacord](https://discordapp.com/)のTextChatに書き込みを行うChatbotです。
-[Xsplit](https://www.xsplit.com/ja/)や[OBS](https://obsproject.com/)での配信時に[Discord StreamKit Overlay](https://streamkit.discordapp.com/overlay)を利用してしたらば掲示板の書き込み内容を配信画面に取り込むことを目的にしているプログラムです。
+当プログラムは、[したらば掲示板](https://rentalbbs.shitaraba.com/)に書き込まれた内容を、[Disacord](https://discordapp.com/)のTextChatに転送するChatbotです。
+[Xsplit](https://www.xsplit.com/ja/)や[OBS](https://obsproject.com/)での配信時に[Discord StreamKit Overlay](https://streamkit.discordapp.com/overlay)を利用してしたらば掲示板の書き込み内容を配信画面に取り込むことを目的に作成しました。
 
 
 ## 事前準備
