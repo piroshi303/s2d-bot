@@ -89,8 +89,7 @@ async def background_loop(channel_id):
                 num = 2
 
                 # スレッドの変更通知
-                await client.send_message(channel,
-                                          + beforeThreadName + 'が' + str(bbsInfo.thread_stop) + 'まで埋まりました。' + '\n'
+                await client.send_message(channel, beforeThreadName + 'が' + str(bbsInfo.thread_stop) + 'まで埋まりました。' + '\n'
                                           + '次スレは' + currentThreadName + 'です。')
 
                 # 次回利用するため
