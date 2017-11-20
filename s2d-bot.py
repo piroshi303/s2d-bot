@@ -176,7 +176,8 @@ class BbsInfo:
         dataFrame[columns[6]] = dataFrame[columns[3]].where(dataFrame[columns[3]] != self.thread_stop, False).where(dataFrame[columns[3]] == self.thread_stop, True)
 
         # 書き込み可能なスレッドのうち最も古い掲示板（チェック対象）を取得
-        currentDataFrame = dataFrame.where(dataFrame[columns[3]] == dataFrame[columns[3]].where(dataFrame[columns[6]] == True).max()).dropna()
+        idSeries = pd.Series(dataFrame[columns[0]].where(dataFrame[columns[6]] == True)).dropna().sort_values(ascending=True).reset_index(drop=True)
+        currentDataFrame = dataFrame.where(dataFrame[columns[0]] == idSeries[0]).dropna()
 
         # 書き込み可能なスレッドで最も古い掲示板情報（=カレントスレッド）の取得
         self.currentThreadId = currentDataFrame[columns[0]].values[0]
